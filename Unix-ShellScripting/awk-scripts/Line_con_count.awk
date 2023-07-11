@@ -15,11 +15,11 @@ BEGIN {
             if(a~/[a-z]/)
                 cc++
 
-        if(c==" ") {
-            while(a==" ")
+        if(a==" ") {
+            
                 space++
         }
-        if(a~/[^0-9]*$/)
+        if(a ~ /[^[:alnum:]_ ]/)
         sc++
 
         if(a~/[0-9]/)
